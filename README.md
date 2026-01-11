@@ -1,35 +1,50 @@
-# Fine-tuning T5 for Question Answering
+# 🤖 Final Term Machine Learning Project
 
-## 👥 Team Information
+Repository ini merupakan submisi untuk **Ujian Akhir Semester (UAS)** mata kuliah Machine Learning. Proyek ini mencakup tiga domain utama pembelajaran mesin: Analisis Regresi, Analisis Data Transaksi, dan Klasifikasi Gambar (Computer Vision).
 
-**Course:** Deep Learning  
-**Institution:** Telkom University  
-**Group:** Task 2 (Question Answering)
+## 👨‍🎓 Profil Mahasiswa
 
-| Name | NIM |
+| Atribut | Detail |
 | :--- | :--- |
-| **Fasya Burhanis Syauqi** | 1103223054 |
+| **Nama** | **Fasya Burhanis Syauqi** |
+| **NIM** | **1103223054** |
+| **Mata Kuliah** | Machine Learning |
 
 ---
 
-## 🎯 Purpose
+## 📂 Project Overview
 
-This repository contains the implementation of **Task 2: Question Answering (QA)**.
+Repository ini terdiri dari tiga bagian utama (end-to-end projects) yang masing-masing berfokus pada teknik *machine learning* yang berbeda:
 
-The primary objective is to fine-tune the **T5-base (Text-to-Text Transfer Transformer)** model using the **SQuAD (Stanford Question Answering Dataset)**. The model is trained to extract the correct answer span from a given context paragraph based on a specific question.
+### 1. 📈 Regression Analysis
+Berfokus pada pemodelan prediktif menggunakan teknik regresi.
+- **Lokasi:** Folder `/Regression`
+- **Tujuan:** Memprediksi nilai kontinu berdasarkan variabel independen yang tersedia dalam dataset.
+
+### 2. 🛒 Transaction Data Analysis
+Berfokus pada analisis pola pembelian atau data transaksi.
+- **Lokasi:** Folder `/Transaction`
+- **Tujuan:** Menganalisis data transaksi untuk menemukan pola (seperti *Market Basket Analysis* atau *Clustering* pelanggan).
+
+### 3. 🖼️ Image Classification & Computer Vision
+Penerapan Deep Learning untuk klasifikasi gambar.
+- **Notebook Utama:** `Image_Classification_Cat_Breeds.ipynb`
+- **Dataset Tambahan:** `FishImgDataset`
+- **Model Deployment:** Tersedia model yang sudah dikonversi ke format TFLite (`MobileNet.tflite`, `mobilenet_v2.tflite`) untuk kebutuhan deployment pada perangkat mobile/IoT.
+- **Arsitektur:** Menggunakan **MobileNet** sebagai *base model* (Transfer Learning) untuk efisiensi komputasi.
 
 ---
 
-## 🔍 Project Overview
+## 🛠️ Repository Structure
 
-### The Task: Extractive Question Answering
-Question Answering is a fundamental NLP task where the model must comprehend a passage of text and answer a query related to it. We approach this as a text-generation problem using a Sequence-to-Sequence (Seq2Seq) architecture.
+Berikut adalah struktur file dalam repository ini:
 
-### The Model: Google T5
-* **Architecture:** Encoder-Decoder Transformer.
-* **Input Format:** `question: <question> context: <context>`
-* **Output Format:** `<answer text>`
-
-### The Dataset: SQuAD
-We use the Stanford Question Answering Dataset (SQuAD), which consists of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text.
-
+```text
+finalterm-machine-learning/
+├── 📂 FishImgDataset/                 # Dataset gambar ikan
+├── 📂 Regression/                     # Project regresi (kode & data)
+├── 📂 Transaction/                    # Project analisis transaksi (kode & data)
+├── 📄 Image_Classification_Cat_Breeds.ipynb  # Notebook klasifikasi ras kucing
+├── 📄 MobileNet.tflite                # Model TFLite V1
+├── 📄 mobilenet_v2.tflite             # Model TFLite V2
+└── 📝 README.md                       # Dokumentasi proyek
