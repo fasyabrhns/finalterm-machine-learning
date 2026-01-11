@@ -9,7 +9,6 @@
 | Name | NIM |
 | :--- | :--- |
 | **Fasya Burhanis Syauqi** | 1103223054 |
-| **Muhammad Muhammad Farhan** | [ISI NIM DISINI] |
 
 ---
 
